@@ -1,0 +1,72 @@
+.carouselmain {
+    background-color:white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    height: 300px;
+    text-align: center;
+    }
+    
+    .carousel-item {
+      height: 300px;
+      }
+      .responsive-font-example,
+  .tagline,.carousel3 {
+      margin: auto;
+      text-align: center;
+  }
+  .responsive-font-example{
+    margin-top: 90px;
+  }
+  .tagline{
+    margin-top: 10px;
+  }
+  .carousel3{
+    margin-top: 140px;
+  }
+  .responsive-font-example {
+    font-size: 3vw;
+  }
+  
+  .tagline {
+    font-size: 1.5vw;
+  }
+  .carousel3{
+    font-size: 1.5vw;
+  }
+      @media (max-width: 768px) {
+        .carouselmain{
+          width: 100%;
+        }
+          .responsive-font-example {
+              font-size: 2rem;
+          }
+        
+          .tagline {
+              font-size: 1rem;
+          }
+          .carousel3{
+            font-size: 1rem;
+          }  
+         
+        }
+        @media (max-width: 480px) {
+          .responsive-font-example {
+              font-size: 2rem;
+          }
+        
+          .tagline {
+              font-size: 1rem;
+          }
+          .carousel3{
+            font-size: 1rem;
+          }
+        
+        }
+        .bi-bi-cloud-arrow-up-fill,
+  .bi-bi-arrow-down,
+  .bi-bi-record2,
+  .bi-bi-arrow-down2,
+  .bi-bi-currency-rupee {
+    display: block;
+    margin: auto;
+   
+  }

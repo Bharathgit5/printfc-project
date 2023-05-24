@@ -1,0 +1,9 @@
+.navbar-logo {
+    color: white;
+    font-size: large;
+    font-weight: 1000;
+  }
+  #signupbtn-nav{
+    position: relative;
+    left: 70%;
+  }
