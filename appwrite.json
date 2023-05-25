@@ -1,0 +1,21 @@
+{
+    "projectId": "64242c801cdd58d26213",
+    "projectName": "printfc.in",
+    "functions": [
+        {
+            "$id": "646e0081d32ca127d0c5",
+            "name": "instamojo",
+            "runtime": "node-16.0",
+            "path": "functions/instamojo",
+            "entrypoint": "src/index.js",
+            "ignore": [
+                "node_modules",
+                ".npm"
+            ],
+            "execute": [],
+            "events": [],
+            "schedule": "",
+            "timeout": 15
+        }
+    ]
+}

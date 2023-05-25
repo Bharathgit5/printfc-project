@@ -16,7 +16,7 @@ const Carousel = () => {
   <div className={`carousel-item ${styles["carousel-item"]} active`}  data-bs-interval="2000">
 
     <h1 className={`${styles['responsive-font-example']}`}>WELCOME TO PRINTFC.IN</h1>
-    <p className={`${styles['tagline']}`}>upload your files to get print</p>
+    <p className={`${styles['tagline']}`}>upload your files to get print at <b>(₹15)</b></p>
     </div>
   
 

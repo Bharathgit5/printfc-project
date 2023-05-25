@@ -55,7 +55,6 @@ const handleUpdateUser = async () => {
           </tbody>
         </table>
         <form action="/pay" method="post">
-      
       <button type="button" className="my-auto btn btn-success" id='checkoutbtn'>Checkout
          </button>  
          </form>

@@ -1,5 +1,5 @@
 import React from 'react'
-
+import { Link } from "react-router-dom"; 
 const Contact = () => {
   return (
     <>
@@ -20,7 +20,7 @@ const Contact = () => {
 					<a href="mailto: bharathjbiet10@gmail.com"> <i className="bi bi-envelope-at-fill socialicons" target="_blank"  rel="noopener noreferrer" aria-label="mail2" ></i> </a>
         </div>
       <div className='terms-and-conditions'>
-        <a href='Termsandcondi'>Terms and conditions</a> | <a href='PrivacyPolicy'>Privacy Policy</a> | <a href='Refund'>Refund</a>
+      <Link to="/Termsandconditions"> TermsandConditions </Link> | <Link to="/PrivacyPolicy">PrivacyPolicy</Link> | <Link to="/Refund">Refund</Link>
       </div>
 				<div className="copyright">
 					© 2022-2023 | Developer: <a href="/">Bharath</a>
