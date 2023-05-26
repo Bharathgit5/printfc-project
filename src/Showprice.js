@@ -23,6 +23,7 @@ const handleUpdateUser = async () => {
     // add any error handling here (e.g., display an error message to the user)
   }
 };
+
   return (
     <>
     <div className="card text-center" id='card3'>
@@ -55,6 +56,7 @@ const handleUpdateUser = async () => {
           </tbody>
         </table>
         <form action="/pay" method="post">
+          
       <button type="button" className="my-auto btn btn-success" id='checkoutbtn'>Checkout
          </button>  
          </form>

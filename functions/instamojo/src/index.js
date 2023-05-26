@@ -4,7 +4,7 @@ module.exports = async function (req, res) {
   if (
       !req.variables['INSTA_API_KEY'] ||
       !req.variables['INSTA_AUTH_KEY'] ||
-      !req.variables['INSTA_REDIRECT_URI'] ||
+      !req.variables['INSTA_REDIRECT_URL'] ||
       !req.variables['APPWRITE_FUNCTION_ENDPOINT'] ||
       !req.variables['APPWRITE_FUNCTION_API_KEY']
   ) {
@@ -19,7 +19,7 @@ module.exports = async function (req, res) {
 
   const API_KEY      = req.variables['INSTA_API_KEY'] ?? '';
   const AUTH_KEY     = req.variables['INSTA_AUTH_KEY'] ?? '';
-  const REDIRECT_URL = req.variables['INSTA_REDIRECT_URI'] ?? '';
+  const REDIRECT_URL = req.variables['INSTA_REDIRECT_URL'] ?? '';
 
   try {
       const form = JSON.parse(req.variables.APPWRITE_FUNCTION_DATA ?? '{}');

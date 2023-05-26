@@ -19,7 +19,7 @@ export default function LogIn() {
     })
     setTimeout(() => {
       setalert(null)
-    }, 6000);
+    }, 2000);
   }
   const handleSubmit = (event) => {
     event.preventDefault();
@@ -27,13 +27,13 @@ export default function LogIn() {
    
     if (!email) {
       showalert('Enter a valid email','warning')
-      window.location.reload();
+     
       return;
     }
   
     if (!password) {
       showalert('Incorrect password','warning')
-      window.location.reload();
+  
       return;
     }
   

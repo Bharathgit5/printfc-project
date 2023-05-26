@@ -7,6 +7,7 @@ import Login from './Login/Login';
 import Termsandconditions from './Termsandconditions';
 import PrivacyPolicy from './PrivacyPolicy';
 import Refund from './Refund';
+import Aboutus from './Aboutus';
 function App() {
  
   return (
@@ -21,6 +22,7 @@ function App() {
 <Route path='/Termsandconditions' element={<Termsandconditions/>}/>
 <Route path='/PrivacyPolicy' element={<PrivacyPolicy/>}/>
 <Route path='/Refund' element={<Refund/>}/>
+<Route path='/Aboutus' element={<Aboutus/>}/>
         </Routes>
         </BrowserRouter>
    </>

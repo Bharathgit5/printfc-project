@@ -19,13 +19,14 @@ const Contact = () => {
 					<a href="https://www.instagram.com/this__is.bharath/"><i className="bi bi-instagram socialicons" target="_blank" rel="noopener noreferrer" aria-label="insta" ></i> </a>
 					<a href="mailto: bharathjbiet10@gmail.com"> <i className="bi bi-envelope-at-fill socialicons" target="_blank"  rel="noopener noreferrer" aria-label="mail2" ></i> </a>
         </div>
+        </section>
       <div className='terms-and-conditions'>
-      <Link to="/Termsandconditions"> TermsandConditions </Link> | <Link to="/PrivacyPolicy">PrivacyPolicy</Link> | <Link to="/Refund">Refund</Link>
+      <Link to="/Termsandconditions" className='tc'> TermsandConditions </Link> | <Link to="/PrivacyPolicy"  className='tc'>PrivacyPolicy</Link> | <Link to="/Refund"  className='tc'>Refund</Link> | <Link to="/Aboutus"  className='tc'>Aboutus</Link>
       </div>
 				<div className="copyright">
-					© 2022-2023 | Developer: <a href="/">Bharath</a>
+					© 2023-2024 | DEVELOPED BY: <a href="https://www.instagram.com/this__is.bharath"  className='tc'>Bharath</a>
 				</div>
-			</section>
+
 
     
     </>
