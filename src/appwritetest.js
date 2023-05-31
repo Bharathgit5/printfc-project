@@ -2,7 +2,7 @@
 import { Account,AppwriteException, Client,Databases,ID} from "appwrite"
 
 const client = new Client()
-client.setEndpoint('http://143.110.240.5/v1') // Your API Endpoint
+client.setEndpoint('https://143.110.240.5/v1') // Your API Endpoint
 .setProject('64242c801cdd58d26213');
 
 
