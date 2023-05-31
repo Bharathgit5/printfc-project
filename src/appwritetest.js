@@ -1,18 +1,10 @@
 
-import { Account,Functions,AppwriteException, Client,Databases,ID} from "appwrite"
+import { Account,AppwriteException, Client,Databases,ID} from "appwrite"
 
 const client = new Client()
-client.setEndpoint('https://api.printfc.in/v1') // Your API Endpoint
+client.setEndpoint('http://143.110.240.5/v1') // Your API Endpoint
 .setProject('64242c801cdd58d26213');
 
-const functions = new Functions(client);
-
-let promise = functions.createExecution('646e0081d32ca127d0c5');
-promise.then(function (response){
-  console.log(response);
-},function(error){
-  console.log(error);
-})
 
 const storage = Client.storage;
 const database = new Databases(client);

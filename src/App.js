@@ -8,6 +8,7 @@ import Termsandconditions from './Termsandconditions';
 import PrivacyPolicy from './PrivacyPolicy';
 import Refund from './Refund';
 import Aboutus from './Aboutus';
+import PaymentButton from './PaymentButton';
 function App() {
  
   return (
@@ -23,6 +24,8 @@ function App() {
 <Route path='/PrivacyPolicy' element={<PrivacyPolicy/>}/>
 <Route path='/Refund' element={<Refund/>}/>
 <Route path='/Aboutus' element={<Aboutus/>}/>
+<Route path='/PaymentButton' element={<PaymentButton/>}/>
+
         </Routes>
         </BrowserRouter>
    </>
