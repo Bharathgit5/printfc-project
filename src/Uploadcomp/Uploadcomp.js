@@ -3,7 +3,7 @@ import { Client, Storage,ID } from "appwrite";
 import CopiesContext from '../CopiesContext'
 import { updateUserDocument1} from "../appwritetest";
 import styles from "./Uploadcomp.module.css";
-
+import { Link } from "react-router-dom"; 
 const Uploadcomp = ({ passCount }) => {
   const [signupSuccess, setsignupSuccess] = useState(null);
   const {setCopies} = useContext(CopiesContext)
@@ -84,10 +84,12 @@ const Uploadcomp = ({ passCount }) => {
     <>
     
      <div className="card text-center" id={styles.card1} >
+ 
     <div className="card-header">
       Upload Your File
     </div>
     <div  className={styles["card-body1"]}>
+    <b>Please   <Link to="/Signup"> Signup</Link> to continue with process</b>
     <div className='uploadmain'>
    <div className='upload'>
 

@@ -59,13 +59,12 @@ const handleButtonClick = () => {
                </tr>
           </tbody>
         </table>
-        <button onClick={handleButtonClick}  type="button" className="my-auto btn btn-success" id='checkoutbtn' >Pay Now</button>
- 
-        
+        <button onClick={handleButtonClick}  type="button" className="my-auto btn btn-success" id='checkoutbtn' >Pay Now : {totalprice}</button>
          </>
       )}
 
   </div>
+  <b>Make Payment and collect your printout at vijay xerox shop</b>
   </div>
   </>
   );
