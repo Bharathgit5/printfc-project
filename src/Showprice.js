@@ -7,7 +7,7 @@ let numpages=  props.count
 let numcopies=  props.copies
 let r1= props.selectedValue
 let r2=props.selectedValue2
-let price = (r1 === "black and white" && r2=== "front side only") ? 10 : (r1 === "black and white" && r2=== "both sides") ? 10 : (r1 === "color" && r2=== "front side only") ? 15 : (r1 === "color" && r2=== "both sides") ? 20:20
+let price = (r1 === "black and white" && r2=== "front side only") ? 15 : (r1 === "black and white" && r2=== "both sides") ? 15 : (r1 === "color" && r2=== "front side only") ? 15 : (r1 === "color" && r2=== "both sides") ? 15:15
 let totalprice = numpages * numcopies * price 
           
 console.log(props.selectedValue)
