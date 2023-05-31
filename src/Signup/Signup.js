@@ -30,25 +30,25 @@ export default function SignUp(props) {
     console.log("username: " + username);
     console.log("Email: " + email);
     if (!username) {
-      showalert("Enter a Your details", "warning");
-    
+      showalert("Enter a valid email1", "warning");
+      window.location.reload();
       return;
     }
     if (!email) {
-      showalert("Enter a valid email", "warning");
-   
+      showalert("Enter a valid email2", "warning");
+      window.location.reload();
       return;
     }
 
     if (!password) {
-      showalert("Enter a valid password", "warning");
-  
+      showalert("Enter a valid email3", "warning");
+      window.location.reload();
       return;
     }
 
     if (password.length < 8) {
-      showalert("Your password must be greater than 8 characters", "warning");
-   
+      showalert("Enter a valid email4", "warning");
+      window.location.reload();
       return;
     }
 
@@ -60,7 +60,7 @@ export default function SignUp(props) {
         // this is where we create the user document
         creatUserDocument({ username, ...account});
         setsignupSuccess(true);
-        showalert("signup successful", "success");
+        showalert("signup successful5", "success");
 
         setsignupSuccess(true);
         setTimeout(() => {
