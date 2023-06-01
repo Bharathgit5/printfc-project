@@ -26,7 +26,10 @@ function Home() {
    
      <Carousel/>
     <CopiesContext.Provider value={{ copies, setCopies}}>
+
     <Uploadcomp  passCount={handleCount} />
+   
+ 
     <Select setSelectedValue={setSelectedValue} setSelectedValue2={setSelectedValue2}/>
     <Showprice selectedValue={selectedValue} selectedValue2={selectedValue2} count={count} copies={copies}/>
     </CopiesContext.Provider>
