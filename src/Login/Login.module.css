@@ -11,7 +11,9 @@
   max-width: 480px;
   width: 90%;
   background-color: #fff;
-  box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.2);
+
+    border-radius: 0.5rem;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   padding: 30px;
   border-radius: 10px;
   display: flex;
@@ -74,7 +76,10 @@
 @media screen and (max-width: 767px) {
   .userbox {
     width: 100%;
-    padding: 20px;
+ 
+    padding: 1.5rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   }
   .logo {
     margin-left: 20%;
@@ -90,6 +95,9 @@
   .userbox {
     border-radius: 0;
     box-shadow: none;
+    padding: 1.5rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   }
   .logo{
     margin-bottom:auto;

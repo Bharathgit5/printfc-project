@@ -1,16 +1,46 @@
-import React, {useContext,useState} from 'react'
-import { Client, Storage,ID } from "appwrite";
+import React, {useContext,useState, useEffect } from 'react'
+import { Client, Storage,ID,Account } from "appwrite";
 import CopiesContext from '../CopiesContext'
 import { updateUserDocument1} from "../appwritetest";
 import styles from "./Uploadcomp.module.css";
-import { Link } from "react-router-dom"; 
+import Alert from '../Alert';
 const Uploadcomp = ({ passCount }) => {
-  const [signupSuccess, setsignupSuccess] = useState(null);
+
   const {setCopies} = useContext(CopiesContext)
   const [docname, setdocname] = useState('');
+  const [isLoggedIn, setIsLoggedIn] = useState(false);
+  const[alert,setalert]=useState(null);
+  const showalert=(message,type)=>{
+    setalert({
+      msg:message,
+      type:type
+    })
+    setInterval(() => {
+      setalert(null)
+    }, 15000);
+  } 
+  useEffect(() => {
+    // Initialize the Appwrite SDK
+    const client = new Client()
+    const account = new Account(client)
+    client.setEndpoint('https://api.printfc.in/v1') // Your API Endpoint
+    .setProject('64242c801cdd58d26213');
+    // Check if the user is logged in
+    const checkLoginStatus = async () => {
+      try {
+        await account.get(); // Verify user session
+        setIsLoggedIn(true);
+        console.log('true')
+      } catch (error) {
+        setIsLoggedIn(false);
+        console.log('false')
+      }
+    };
+    checkLoginStatus();
+  }, []);
 
   const   Handlefile = ()=>{
-    setsignupSuccess(true)
+    
     const client = new Client()
     client.setEndpoint('https://api.printfc.in/v1') // Your API Endpoint
     .setProject('64242c801cdd58d26213');
@@ -47,6 +77,7 @@ const Uploadcomp = ({ passCount }) => {
    setdocname(txt);
     
    }
+  
    const handleUpdateUser = async () => {
     try {
       const response = await updateUserDocument1({docname});
@@ -79,26 +110,29 @@ const Uploadcomp = ({ passCount }) => {
         const handleChange = (event) => {
           setCopies(event.target.value);
         }
-      
+    
+        const handleUploadClick = () => {
+          if (!isLoggedIn) {
+            showalert('Please Login/Signup to enable upload button','warning')
+          }
+        };
+ 
   return (
     <>
-    
+     <Alert alert={alert}/> 
      <div className="card text-center" id={styles.card1} >
  
     <div className="card-header">
       Upload Your File
     </div>
     <div  className={styles["card-body1"]}>
-    <b>Please   <Link to="/Signup"> Signup</Link> to continue with process</b>
+ 
     <div className='uploadmain'>
    <div className='upload'>
-
-      <button type='button'  className={styles["file-upload-label"]}  disabled={signupSuccess === false} >
-      <input type="file" id='upload-file' className={styles["file-upload-input"]} onChangeCapture={pdffunc} onChange={Handlefile} disabled={signupSuccess === false} />
-      <i className="bi bi-cloud-arrow-up"></i> <b>Upload File</b>
+    <button type='button'  className={styles["file-upload-label"]}  onClick={handleUploadClick} >
+      <input type="file" id='upload-file' className={styles["file-upload-input"]} onChangeCapture={pdffunc} onChange={Handlefile}  disabled={isLoggedIn === false}  />
+      <i className="bi bi-cloud-arrow-up" id={styles.icon}  ></i> <b>| Upload File</b>
       </button>
-    
-
       <p  onChange={handleUpdateUser()}>{docname}</p>
     </div>
  
