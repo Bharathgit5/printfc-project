@@ -10,7 +10,7 @@ import Contact from './Contact';
 import CopiesContext from './CopiesContext';
 
 
-function Home() {
+function Home(props) {
   const [count, setCount] = useState(0);
   const [copies, setCopies] = useState();
   const [selectedValue, setSelectedValue] = useState("");
@@ -23,13 +23,9 @@ function Home() {
   return (
     <>
      <Navbar/>
-   
      <Carousel/>
     <CopiesContext.Provider value={{ copies, setCopies}}>
-
     <Uploadcomp  passCount={handleCount} />
-   
- 
     <Select setSelectedValue={setSelectedValue} setSelectedValue2={setSelectedValue2}/>
     <Showprice selectedValue={selectedValue} selectedValue2={selectedValue2} count={count} copies={copies}/>
     </CopiesContext.Provider>

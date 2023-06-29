@@ -140,6 +140,11 @@
                         line-height: 100px;
                        
                        }
+                       .contacticons{
+                        font-size: 20px;
+                        color: black;
+                         border-radius: 50px;
+                       }
                      .copyright{
                       text-align: center;
                       margin-top: 10px;

@@ -4,7 +4,7 @@ import CopiesContext from '../CopiesContext'
 import { updateUserDocument1} from "../appwritetest";
 import styles from "./Uploadcomp.module.css";
 import Alert from '../Alert';
-const Uploadcomp = ({ passCount }) => {
+const Uploadcomp = ({ passCount,props }) => {
 
   const {setCopies} = useContext(CopiesContext)
   const [docname, setdocname] = useState('');
@@ -119,9 +119,9 @@ const Uploadcomp = ({ passCount }) => {
  
   return (
     <>
-     <Alert alert={alert}/> 
+   
      <div className="card text-center" id={styles.card1} >
- 
+     <Alert alert={alert}/> 
     <div className="card-header">
       Upload Your File
     </div>

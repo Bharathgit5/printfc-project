@@ -1,6 +1,5 @@
 import React from 'react'
 import Home from './Home'
-
 import {BrowserRouter , Routes, Route} from "react-router-dom";
 import Signup from './Signup/Signup';
 import Login from './Login/Login';
@@ -9,6 +8,7 @@ import PrivacyPolicy from './PrivacyPolicy';
 import Refund from './Refund';
 import Aboutus from './Aboutus';
 import PaymentButton from './PaymentButton';
+
 function App() {
  
   return (
@@ -25,6 +25,8 @@ function App() {
 <Route path='/Refund' element={<Refund/>}/>
 <Route path='/Aboutus' element={<Aboutus/>}/>
 <Route path='/PaymentButton' element={<PaymentButton/>}/>
+
+
 
         </Routes>
         </BrowserRouter>

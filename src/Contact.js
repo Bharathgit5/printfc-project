@@ -7,8 +7,11 @@ const Contact = () => {
    <section id='contact-section'>
         <h2 className='main-heading text-center' id='C3'>Contact us</h2>
         <div className='contact'> 
-        <a href='mailto:bharathjbiet10@gmail.com'>  <i className='bi bi-envelope-at socialicons' target="_blank"  rel="noopener noreferrer" aria-label="mail"></i> </a>
-      <a href='https://wa.me/8639954433'><i className='bi bi-whatsapp socialicons' target="_blank"  rel="noopener noreferrer" aria-label="whatsapp"></i></a>
+   <i className='bi bi-envelope-at contacticons'></i><p>printf.in12@gmail.com</p>
+      <i className='bi bi-whatsapp contacticons' ></i> <p>8639954433</p>
+      <i class="bi bi-house-up-fill contacticons"></i>  <p>  Vijay Xerox shop,Bhaskar Nagar, Moinabad Mandal,
+R.R. District, Hyderabad
+Telangana State , India-500075</p> 
     </div> 
     </section>
     <section id="footer">
