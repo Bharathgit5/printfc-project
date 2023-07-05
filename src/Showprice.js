@@ -34,7 +34,7 @@ const handleUpdateUser = async () => {
    
   <div className="card-body3">
     <button type="button" className="btn btn-dark" id='showpricebtn' onClick={() => setShowTable(!showTable)}>
-        Show Price $
+        Show Price ₹
       </button>
       {showTable && (
         <>
