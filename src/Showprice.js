@@ -23,9 +23,6 @@ const handleUpdateUser = async () => {
     // add any error handling here (e.g., display an error message to the user)
   }
 };
-const handleButtonClick = () => {
-  window.open('https://www.instamojo.com/@printfc_in12', '_blank');
-};
 
 
   return (
@@ -59,7 +56,7 @@ const handleButtonClick = () => {
                </tr>
           </tbody>
         </table>
-        <button onClick={handleButtonClick}  type="button" className="my-auto btn btn-success" id='checkoutbtn' >Pay Now : {totalprice}</button>
+       
          </>
       )}
 

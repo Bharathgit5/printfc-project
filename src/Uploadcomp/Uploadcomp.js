@@ -24,7 +24,7 @@ const Uploadcomp = ({ passCount,props }) => {
     const client = new Client()
     const account = new Account(client)
     client.setEndpoint('https://api.printfc.in/v1') // Your API Endpoint
-    .setProject('64242c801cdd58d26213');
+    .setProject('649ee9b9cac1d0b0cae3');
     // Check if the user is logged in
     const checkLoginStatus = async () => {
       try {
@@ -43,10 +43,10 @@ const Uploadcomp = ({ passCount,props }) => {
     
     const client = new Client()
     client.setEndpoint('https://api.printfc.in/v1') // Your API Endpoint
-    .setProject('64242c801cdd58d26213');
+    .setProject('649ee9b9cac1d0b0cae3');
     const storage = new Storage(client);
     const promise = storage.createFile(
-      '64251c8eea525dadea38',
+      '64a4cb23bd5fe24fd92b',
       ID.unique(),
       document.getElementById('upload-file').files[0]
     );
